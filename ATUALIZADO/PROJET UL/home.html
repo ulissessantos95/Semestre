@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="icon" href="caminho-para-o-seu-favicon.ico" type="image/x-icon"> <!--Saporra é um favicon, só mudar dps. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centros Esportivos</title>
+  <link rel="stylesheet" href="styleHOME.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Centros Esportivos em Floripa</h1>
+    <div class="filter">
+      <input type="date" value="2024-12-03">
+      <input type="text" placeholder="Nome, endereço">
+      <select>
+        <option>Todos os Esportes</option>
+      </select>
+    </div>
+    <div class="action">
+      <!-- Aqui segue as funções do sistema da paginal central -->
+      <a href="cadastroUser.html" class="button">Cadastrar Espaço</a>
+      <a href="login.html" class="button">Login</a>
+      <a href="excluirConta.html"  class="button">Excluir conta</a>
+      
+    </div>
+  </header>
+
+  <main class="centers">
+    <section class="center">
+      <img src="images/estacao-bola.jpg" alt="Estação da Bola">
+      <h2 onclick="window.location.href='algQuadra.html'">Estação da Bola</h2>
+      <p>Rua Ursulina Senna de Castro, 203</p>
+      <div class="rating">★★★★★</div>
+      <div class="hours">
+        <button>15:00</button>
+        <button>16:00</button>
+        <button>17:00</button>
+        <button>18:00</button>
+      </div>
+    </section>
+
+    <section class="center">
+      <img src="images/arena-b12.jpg" alt="Arena B12">
+      <h2>Arena B12</h2>
+      <p>Rodovia Aparício Ramos Cordeiro, 361</p>
+      <div class="rating">★★★★★</div>
+      <div class="hours">
+        <button>20:00</button>
+        <button>21:00</button>
+        <button>22:00</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    
+    <p>&copy; Senai Florianópolis, 2024!</p>
+  </footer>
+</body>
+</html>

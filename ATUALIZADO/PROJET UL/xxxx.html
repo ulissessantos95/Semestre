@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CadastroUser.css">
+    <title>Cadastre-se</title>
+</head>
+<body>
+
+    <div class="corpo">
+        <h1>Cadastre-se</h1>
+        
+        <form id="formCad">
+        <div class="Corpo">
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" placeholder="Nome"><br><br>
+
+            <label for="telefone">Telefone: </label>
+            <input type="text" id="telefone" placeholder="(000)xxxxx-xxxx"><br><br>
+
+            <label for="cidade">Cidade</label>
+            <input type="cidade" id="cidade" placeholder="Cidade"><br><br> <!--Lista de seleção de cidade. DEVE SER ALTERADO-->
+
+            <label for="">E-mail: </label>
+            <input type="email" onclick="login()" id="email" placeholder="E-mail"><br><br>
+
+            <label for="password">Senha</label>
+            <input type="senha" id="senha" placeholder="Senha"><br><br>
+
+            <button type="cadastro" onclick="cadastra()" id="cadastro">Cadastrar</button>
+            
+            <div>
+
+            </div>
+        </div>
+    </div>
+        </form>
+    <script src="cadastro.js"></script>
+
+</body>
+</html>

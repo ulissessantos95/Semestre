@@ -1,0 +1,107 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .header {
+    background-color: #ADD8E6;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .filter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .filter input,
+  .filter select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .centers {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 20px;
+  }
+  
+  .center {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .center img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .center h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .center p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .rating {
+    margin: 10px 0;
+    color: #f39c12;
+  }
+  
+  .hours button {
+    background-color: #2a3b4d;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hours button:hover {
+    background-color: #1e2a38;
+  }
+  .action {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2a3b4d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #1e2a38;
+  }
+  
+  footer {
+  background-color: #708090;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  }

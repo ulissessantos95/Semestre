@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Maps no HTML</title>
+  <style>
+    /* Estilos para o mapa */
+    #map {
+      height: 400px; /* altura do mapa */
+      width: 100%;   /* largura do mapa */
+    }
+  </style>
+</head>
+<body>
+  <h1>Exemplo de Mapa com Google Maps</h1>
+  
+  <!-- Div onde o mapa será renderizado -->
+  <div id="map"></div>
+
+  <!-- Inclusão do script da API do Google Maps -->
+  <script src="https://www.google.com.br/maps/@-27.5841024,-48.5097472,14z?hl=pt-BR&entry=ttu&g_ep=EgoyMDI0MTIxMC4wIKXMDSoASAFQAw%3D%3D" async defer></script>
+
+  <script>
+    // Função que inicializa o mapa
+    function initMap() {
+      // Definindo as coordenadas do centro do mapa
+      const florianopolis = { lat: -27.5947, lng: -48.5480 }; // Coordenadas de Florianópolis
+
+      // Criando o mapa
+      const map = new google.maps.Map(document.getElementById("map"), {
+        center: florianopolis, // Centro do mapa
+        zoom: 12,              // Nível de zoom
+      });
+
+      // Criando um marcador no mapa
+      const marker = new google.maps.Marker({
+        position: florianopolis,
+        map: map,
+        title: "Florianópolis", // Título do marcador
+      });
+    }
+  </script>
+</body>
+</html>

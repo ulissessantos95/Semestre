@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excluir conta</title>
+  <link rel="stylesheet" href="excluirConta.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Excluir conta </h1>
+  </header>
+  <main>
+    <section class="form-section">
+      <form action="/cadastrar" method="POST" enctype="multipart/form-data">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="" required>
+      
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" placeholder="" required>
+      
+        <label for="horarios">Telefone:</label>
+        <input type="text" id="horarios" name="horarios" placeholder="" required>
+
+        <label for="horarios">E-mail:</label>
+        <input type="text" id="horarios" name="horarios" placeholder="" required>
+      
+        <button href="home.html" onclick="retonar()">Cancelar</button>
+        <button href="home.html" onclick="excluirConta()">Excluir Conta</button>
+      </form>
+    </section>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
